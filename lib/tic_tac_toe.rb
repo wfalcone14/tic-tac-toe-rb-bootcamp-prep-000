@@ -26,7 +26,7 @@ def move(board,input,player)
   board[input] = player
 end 
 
-def position_taken?(board, index)
+def position_taken?(board,index)
   board[index]== "X" || board[index] == "O"
 end
 
