@@ -40,7 +40,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = input_to_index(gets.strip)
   if valid_move?(board,input) == true
-    move(board,input,pos="X")
+    move(board,input,pos)
     display_board(board)
   else
     turn(board)
