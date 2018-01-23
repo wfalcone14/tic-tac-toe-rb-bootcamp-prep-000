@@ -22,8 +22,8 @@ def input_to_index(input)
   return input
 end
 
-def move(board,input,pos)
-  board[input] = pos
+def move(board,input,token)
+  board[input] = token
 end 
 
 def position_taken?(board, index)
