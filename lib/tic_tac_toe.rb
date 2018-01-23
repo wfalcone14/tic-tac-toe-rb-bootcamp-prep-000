@@ -30,8 +30,8 @@ def position_taken?(board,index)
   board[index]== "X" || board[index] == "O"
 end
 
-def valid_move?(board,index)
-  input.between?(0,8) && !position_taken?(board,index)
+def valid_move?(board, index)
+  index.between?(0,8) && !position_taken?(board,index)
 end
 
 def turn(board)
