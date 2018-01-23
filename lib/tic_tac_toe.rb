@@ -92,7 +92,7 @@ end
 
 def play(board)
   n = 0 
-  until n == 9
+  until n == 9 || won?(board)
     turn(board)
     n +=1 
   end 
